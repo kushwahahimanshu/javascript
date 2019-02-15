@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello js</title>
+</head>
+<body>
+  <script>
+  	function down(obj) {
+  		obj.style.backgroundColor ='yellow';
+  		obj.innerHTML="release me";
+  	}
+  	function up(obj) {
+  		obj.style.backgroundColor="green";
+        obj.innerHTML="Thank you";   //here this refer to obj it use at pass argu like id. (here this refer current content)
+  	}
+  </script>
+  <div onmousedown="down(this)" onmouseup="up(this)" style="background-color: orange; width: 90px; height: 20px; padding: 40px;">Click me</div>
+</body>
+</html>

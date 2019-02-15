@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus</title>
+</head>
+<body>
+  <script>
+  	function focusme(a) {
+  		a.style.background="yellow";
+  		a.style.border="2px solid red";
+  	}
+  	function onblurme(a) {
+  		a.style.background="blue";
+  	}
+  </script>
+  <input type="text" name="" placeholder="onfocus" onfocus="focusme(this)" onblur="onblurme(this)">
+</body>
+</html>

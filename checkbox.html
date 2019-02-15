@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbox</title>
+</head>
+<body>
+  <script>
+  	function myfun() {
+  		var a=document.forms.container;
+  		for(i=0;i<a.length; i++){
+  			if (a[i].checked==true) 
+  				return true;
+  			}
+  			document.getElementById('message').innerHTML="** please select anyone";
+  			return false;
+  		}
+  	
+  </script>
+    <h1>Checkbox validation</h1>
+    <form action="thanks.html" name="forms" onsubmit="return myfun()">
+    	<input type="checkbox" name="container" value="LIKE">LIKE
+    	<input type="checkbox" name="container" value="SHARE">SHARE
+    	<input type="checkbox" name="container" value="SUBSCRIBE">SUBSCRIBE</input>
+    	<p id="message" style="color: red;"></p>
+    	<input type="submit" name="" value="submit">
+    </form>
+</body>
+</html>

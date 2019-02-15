@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get date</title>
+</head>
+<body>
+ <h2>Get date methods</h2>
+  <script>
+  	var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  	var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+  	var newdate=new Date();
+  	var d1=newdate.getFullYear();
+  	var d2=newdate.getMonth()+1;  // this show month no.
+  	var d3=months[newdate.getMonth()];  //this show month name
+  	var d4=newdate.getDay();
+  	var d5=days[newdate.getDay()];//get day return the day no. i.e.2,3,4 etc.
+  	var d6=newdate.toDateString();
+  	var d7=newdate.toUTCString();
+  	document.write(d5);
+  	//document.write(h+":"+m+":"+s);
+  </script>
+</body>
+</html>

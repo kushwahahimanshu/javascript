@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>diff type of bject</title>
+	<script type="text/javascript">
+		var myhouse=new Object();           // object by new keyword
+		myhouse.name="sharda bhavan";
+		myhouse.lenght=50;
+		myhouse.width=30;
+		myhouse.area=function(){
+			return this.lenght*myhouse.width;        // here this refer the object name myhouse myhouse.width ki jagah this.width bhi likh sakte hai
+		}
+		document.write("My House area is : "+myhouse.area());
+
+		var yourhouse={
+			name:"shyamla hills",
+			lenght:20,
+			width:30,
+			area:function(){
+				return this.lenght*yourhouse.width;
+			}
+		}
+		document.write("<br> Your house area is : "+yourhouse.area());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

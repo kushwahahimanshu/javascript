@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+</head>
+<body>
+ <script>
+ 	function Refresh() {
+ 		var a = Math.random()*10;
+ 		var b = Math.random()*10;
+ 		var c = Math.random()*10;
+ 		var d = Math.random()*10;
+ 		var e = Math.random()*10;
+ 		document.getElementById('msg').innerHTML=Math.round(a)+" "+Math.round(b)+" "+Math.round(c)+" "+Math.round(d)+" "+Math.round(e);
+ 	}
+ </script>
+ <div align="center">
+ 	<form><br>
+ 		<h2>Captcha</h2>
+ 		<h1 id="msg" style="border:2px solid red; width: 150px; color: yellow;">HII</h1>
+ 		<input type="button" name="reset" value="Refresh" onclick="Refresh()">
+ 	</form>
+ </div>
+</body>
+</html>

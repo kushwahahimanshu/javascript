@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onmouse over/ out</title>
+</head>
+<body>
+ <script>
+ 	function over(a) {
+ 		a.style.color="red";
+ 		a.style.fontSize="20px";
+ 	}
+ 	function out(a) {
+ 		a.style.color="green";
+ 	}
+ </script>
+ <img src="sea.png" onmouseover="this.src='mi.png'" onmouseout="this.src='home.png'">
+ <p onmouseover="over(this)" onmouseout="out(this)"> My name is himanshu kushwha.</p>
+</body>
+</html>

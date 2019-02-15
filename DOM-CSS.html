@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS DOM</title>
+</head>
+<body>
+ <p id="p1">Hello Himanshu</p><br>
+ <h2 id="h2">You are learning Javascript</h2>
+<script>
+	document.getElementById('p1').style.color="blue";
+	document.getElementById('h2').setAttribute("style","background-color:red; color:White; text-align:center; font-size:30px;");
+</script>
+ <button type="button" onclick="document.getElementById('h2').style.color='yellow'">Press Me</button>
+</body>
+</html>

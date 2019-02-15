@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>email validation</title>
+</head>
+<body>
+  <form action="thank.php" onsubmit="return myfun()">
+  	<label>Email</label>&nbsp;&nbsp;&nbsp;
+  	<input type="email" name="email" id="email" class="form-control">
+  	<span id="msg" style="color: red;"></span><br><br>
+  	&nbsp;&nbsp;&nbsp;<button>Submit</button><input type="submit" name="">
+  </form>
+  <script>
+  	function myfun() {
+       //var user=/^[A-Za-z. ]{3,}$/;
+
+  		var a=document.getElementById('email').value;
+  		if (a=='') {
+  			document.getElementById('msg').innerHTML="** please fill email";
+  			return false;
+  		}
+  		 if(a.indexOf('@')<=0){
+	  	document.getElementById("msg").innerHTML="** Invalid @ Position";
+	  	return false;
+	    }
+
+
+	  if((a.charAt(a.length-4)!='.') && (a.charAt(a.length-3)!='.')){
+	  document.getElementById("msg").innerHTML="** Invalid Dot Position";
+	  	return false;
+	    }
+
+  	}
+  </script>
+</body>
+</html>

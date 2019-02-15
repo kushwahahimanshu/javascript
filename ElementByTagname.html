@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Element by tag name</title>
+	<script>
+		function PN(){
+			var p=document.getElementsByTagName('p')[1];   //here index value must given
+			p.innerHTML="you are learning javascript";
+			p.style.fontSize="40px";
+			p.style.backgroundColor="yellow";
+			p.style.color="blue";
+		}
+	</script>
+</head>
+<body>
+  <p id="para1"> Welcome to javascript1</p>
+  <p id="para2"> Welcome to javascript2</p>
+  <p id="para3"> Welcome to javascript3</p>
+
+  <h1 id="h1">Gwalior</h1>
+  <h1 id="h1">Bhopal</h1>
+  <input type="button" value="Click me" onclick="PN()">
+</body>
+</html>

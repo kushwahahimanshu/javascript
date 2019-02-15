@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>element by query selecter</title>
+</head>
+<body>
+ <h1>Learning Js</h1>
+ <h1 class="pn myclass">PN INFOSYS</h1>
+ <h2 id="pn2">Now</h2>
+ <p class="pn1">Hello <span>Gwalior</span></p>
+ <p class="myclass"><span class="myclass">Good</span>Mohit</p>
+ <div class="pn1">
+ 	<p>1st p inside div</p>
+ 	<p class="pn">2nd p inside div</p>
+ 	<p id="pn2">I am paragraph</p>
+ </div>
+ <script>
+ 	var result = document.querySelector("p,h1,.hello,#pn1"); //group selecter jo subse pahle milega use 
+ 	result.style.color="blue";
+ 	console.log(result);
+ </script>
+</body>
+</html>

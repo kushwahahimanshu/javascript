@@ -1,0 +1,1 @@
+document.write("hello javascript i am external js")

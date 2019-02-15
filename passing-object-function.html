@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 	var person=function(name,age,city)
+ 	             {
+ 	             	this.name=name;
+ 	             	this.age=age;
+ 	             	this.city=city;
+ 	             }
+                  var himanshu=new person('himanshu kushwaha',20,'Bangalore');
+                  var deepu=new person('deepu',22,'Gwalior');
+                  var rohit=new person('rohit',25,'Delhi');
+
+                  function agedifference(p1,p2) {
+                  	var diff=Math.abs(p1.age , p2.age); // how to pass two parameter
+                  	document.write("Age Diffrent between "+p1.name+" and "+p2.name+" is "+diff+" years");
+                  }
+
+                  agedifference(deepu,rohit);
+ </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function expression</title>
+	<script type="text/javascript">
+		var Area=function(){                        //function expression
+			return this.lenght*this.width;
+		}
+
+		var myhouse=new Object();           // object by new keyword
+		myhouse.name="sharda bhavan";
+		myhouse.lenght=50;
+		myhouse.width=30;
+		myhouse.area=Area;
+		document.write("<br> My house area is :" +myhouse.area());
+
+		var yourhouse={
+			name:"shyamla hills",
+			lenght:20,
+			width:30,
+			area:Area
+		};
+		document.write("<br> Your house area is :" +yourhouse.area());
+	</script>
+</head>
+<body>
+
+</body>
+</html>
